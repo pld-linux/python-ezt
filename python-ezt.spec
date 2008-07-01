@@ -26,10 +26,9 @@ EZT is a very clean and simple module for templating in Python.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/ezt
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
 
-:> $RPM_BUILD_ROOT%{py_sitescriptdir}/ezt/__init__.py
-install ezt.py $RPM_BUILD_ROOT%{py_sitescriptdir}/ezt
+install ezt.py $RPM_BUILD_ROOT%{py_sitescriptdir}
 
 %py_comp $RPM_BUILD_ROOT
 %py_ocomp $RPM_BUILD_ROOT
@@ -42,5 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{py_sitescriptdir}/ezt
-%{py_sitescriptdir}/ezt/*.py[co]
+%{py_sitescriptdir}/*.py[co]
