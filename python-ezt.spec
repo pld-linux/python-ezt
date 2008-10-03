@@ -3,7 +3,7 @@ Summary:	EZT is a very clean and simple module for templating in Python
 Name:		python-ezt
 # 0.svnrevision
 Version:	0.22
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries/Python
 # http://ezt.googlecode.com/svn/trunk/ ezt
